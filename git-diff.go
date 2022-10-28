@@ -1,4 +1,4 @@
-package main
+package workflow
 
 import (
 	"io"
@@ -8,12 +8,12 @@ import (
 )
 
 var _ = goyek.Define(goyek.Task{
-	Name:  "diff",
+	Name:  "git-diff",
 	Usage: "git diff",
 	Action: func(tf *goyek.TF) {
-		Exec(tf, dirRoot, "git diff --exit-code")
+		Exec(tf, "git diff --exit-code")
 
-		tf.Log("Cmd: git status --porcelain")
+		tf.Log("Exec: git status --porcelain")
 		cmd := tf.Cmd("git", "status", "--porcelain")
 		sb := &strings.Builder{}
 		cmd.Stdout = io.MultiWriter(tf.Output(), sb)

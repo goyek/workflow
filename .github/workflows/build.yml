@@ -26,21 +26,3 @@ jobs:
 
       - name: Build
         run: ./goyek.sh all diff
-
-      - name: Upload dist
-        uses: actions/upload-artifact@v3
-        with:
-          name: dist-${{ matrix.os }}
-          path: dist
-
-      - name: Upload coverage
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage-${{ matrix.os }}
-          path: coverage.*
-
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          file: ./coverage.out
-          flags: ${{ runner.os }}
