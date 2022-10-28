@@ -18,13 +18,13 @@ var (
 )
 
 func init() {
-	goyek.SetDefault(all)
+	goyek.SetDefault(PipelineAll)
 }
 
 // Library undefines all tasks that are related to an application build pipeline.
 func Library() {
-	goyek.Undefine(stageBuild)
-	goyek.Undefine(goBuild)
+	goyek.Undefine(StageBuild)
+	goyek.Undefine(TaskGoBuild)
 }
 
 // Main parses the args and runs the workflow.

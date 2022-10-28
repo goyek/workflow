@@ -6,7 +6,7 @@ import (
 	"github.com/goyek/goyek/v2"
 )
 
-var goBuild = goyek.Define(goyek.Task{
+var TaskGoBuild = goyek.Define(goyek.Task{
 	Name:  "go-build",
 	Usage: "go build",
 	Action: func(tf *goyek.TF) {

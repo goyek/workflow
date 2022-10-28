@@ -11,9 +11,4 @@
         "formatting.local": "github.com/goyek/workflow",
         "formatting.gofumpt": true
     },
-    // golangci-lint  
-    "go.lintTool": "golangci-lint",
-    "go.lintFlags": [
-        "--fast"
-    ]
 }

@@ -2,12 +2,12 @@ package workflow
 
 import "github.com/goyek/goyek/v2"
 
-var all = goyek.Define(goyek.Task{
+var PipelineAll = goyek.Define(goyek.Task{
 	Name:  "all",
 	Usage: "build pipeline",
 	Deps: goyek.Deps{
-		stageInit,
-		stageBuild,
-		stageTest,
+		StageInit,
+		StageBuild,
+		StageTest,
 	},
 })

@@ -7,7 +7,7 @@ import (
 	"github.com/goyek/goyek/v2"
 )
 
-var _ = goyek.Define(goyek.Task{
+var TaskGitDiff = goyek.Define(goyek.Task{
 	Name:  "git-diff",
 	Usage: "git diff",
 	Action: func(tf *goyek.TF) {

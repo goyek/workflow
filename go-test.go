@@ -2,7 +2,7 @@ package workflow
 
 import "github.com/goyek/goyek/v2"
 
-var goTest = goyek.Define(goyek.Task{
+var TaskGoTest = goyek.Define(goyek.Task{
 	Name:  "go-test",
 	Usage: "go test",
 	Action: func(tf *goyek.TF) {
