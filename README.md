@@ -1,6 +1,5 @@
 # goyek reusable workflow
 
-[![GitHub Release](https://img.shields.io/github/v/release/goyek/workflow)](https://github.com/goyek/workflow/releases)
 [![Go Reference](https://pkg.go.dev/badge/github.com/goyek/workflow.svg)](https://pkg.go.dev/github.com/goyek/workflow)
 [![go.mod](https://img.shields.io/github/go-mod/go-version/goyek/workflow)](go.mod)
 [![LICENSE](https://img.shields.io/github/license/goyek/workflow)](LICENSE)
