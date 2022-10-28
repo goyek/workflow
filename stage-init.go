@@ -7,5 +7,6 @@ var StageInit = goyek.Define(goyek.Task{
 	Usage: "init stage",
 	Deps: goyek.Deps{
 		TaskGoMod,
+		TaskGoGenerate,
 	},
 })
