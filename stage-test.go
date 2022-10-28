@@ -6,7 +6,7 @@ var StageTest = goyek.Define(goyek.Task{
 	Name:  "test",
 	Usage: "test stage",
 	Deps: goyek.Deps{
-		TaskGoLint,
+		TaskGoVet,
 		TaskGoTest,
 	},
 })
