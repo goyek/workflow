@@ -51,7 +51,7 @@ func Main() {
 	}
 
 	goyek.SetUsage(usage)
-	goyek.SetLogger(goyek.FmtLogger{})
+	goyek.SetLogger(&codeLineLogger{})
 	goyek.Main(flag.Args(), opts...)
 }
 
