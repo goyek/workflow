@@ -10,6 +10,7 @@ import (
 // Exec runs the command in given directory.
 // It calls tf.Error[f] and returns false in case of any problems.
 func Exec(tf *goyek.TF, cmdLine string) bool {
+	tf.Helper()
 	tf.Logf("Exec: %s", cmdLine)
 	args, err := shellwords.Parse(cmdLine)
 	if err != nil {
@@ -27,6 +28,7 @@ func Exec(tf *goyek.TF, cmdLine string) bool {
 // Remove removes path and any children it contains.
 // It calls tf.Error in case there is an error during removal.
 func Remove(tf *goyek.TF, path string) {
+	tf.Helper()
 	if _, err := os.Stat(path); err != nil {
 		return
 	}
