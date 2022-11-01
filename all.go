@@ -11,3 +11,7 @@ var PipelineAll = goyek.Define(goyek.Task{
 		StageTest,
 	},
 })
+
+func init() {
+	goyek.SetDefault(PipelineAll)
+}

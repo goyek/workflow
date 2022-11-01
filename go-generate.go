@@ -1,11 +1,14 @@
 package workflow
 
-import "github.com/goyek/goyek/v2"
+import (
+	"github.com/goyek/goyek/v2"
+	"github.com/goyek/x/cmd"
+)
 
 var TaskGoGenerate = goyek.Define(goyek.Task{
 	Name:  "go-generate",
 	Usage: "go generate",
 	Action: func(tf *goyek.TF) {
-		Exec(tf, "go generate ./...")
+		cmd.Exec(tf, "go generate ./...")
 	},
 })
