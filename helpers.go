@@ -7,14 +7,14 @@ import (
 )
 
 // Remove removes path and any children it contains.
-// It calls tf.Error in case there is an error during removal.
-func Remove(tf *goyek.TF, path string) {
-	tf.Helper()
+// It calls a.Error in case there is an error during removal.
+func Remove(a *goyek.A, path string) {
+	a.Helper()
 	if _, err := os.Stat(path); err != nil {
 		return
 	}
-	tf.Log("Remove: " + path)
+	a.Log("Remove: " + path)
 	if err := os.RemoveAll(path); err != nil {
-		tf.Error(err)
+		a.Error(err)
 	}
 }

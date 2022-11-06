@@ -8,7 +8,7 @@ import (
 var TaskGoMod = goyek.Define(goyek.Task{
 	Name:  "go-mod",
 	Usage: "go mod tidy",
-	Action: func(tf *goyek.TF) {
-		cmd.Exec(tf, "go mod tidy")
+	Action: func(a *goyek.A) {
+		cmd.Exec(a, "go mod tidy")
 	},
 })

@@ -8,7 +8,7 @@ import (
 var TaskGoGenerate = goyek.Define(goyek.Task{
 	Name:  "go-generate",
 	Usage: "go generate",
-	Action: func(tf *goyek.TF) {
-		cmd.Exec(tf, "go generate ./...")
+	Action: func(a *goyek.A) {
+		cmd.Exec(a, "go generate ./...")
 	},
 })
