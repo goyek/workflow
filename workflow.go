@@ -2,8 +2,6 @@
 package workflow
 
 import (
-	"os"
-
 	"github.com/goyek/goyek/v2"
 	"github.com/goyek/x/boot"
 )
@@ -20,8 +18,5 @@ func Library() {
 
 // Main parses the args and runs the workflow.
 func Main() {
-	if err := os.Chdir(".."); err != nil {
-		panic(err)
-	}
 	boot.Main()
 }
