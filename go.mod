@@ -3,8 +3,8 @@ module github.com/goyek/workflow
 go 1.19
 
 require (
-	github.com/goyek/goyek/v2 v2.0.0-rc.11
-	github.com/goyek/x v0.1.3
+	github.com/goyek/goyek/v2 v2.0.0-rc.12
+	github.com/goyek/x v0.1.4
 )
 
 require (
