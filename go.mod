@@ -1,6 +1,6 @@
 module github.com/goyek/workflow
 
-go 1.19
+go 1.20
 
 require (
 	github.com/goyek/goyek/v2 v2.0.0-rc.12
