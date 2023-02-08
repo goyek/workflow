@@ -3,7 +3,7 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/goyek/workflow.svg)](https://pkg.go.dev/github.com/goyek/workflow)
 [![go.mod](https://img.shields.io/github/go-mod/go-version/goyek/workflow)](go.mod)
 [![LICENSE](https://img.shields.io/github/license/goyek/workflow)](LICENSE)
-[![Build Status](https://img.shields.io/github/workflow/status/goyek/workflow/build)](https://github.com/goyek/workflow/actions?query=workflow%3Abuild+branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/goyek/workflow/build.yml?branch=main)](https://github.com/goyek/workflow/actions?query=workflow%3Abuild+branch%3Amain)
 [![Go Report Card](https://goreportcard.com/badge/github.com/goyek/workflow)](https://goreportcard.com/report/github.com/goyek/workflow)
 
 ⭐ `Star` this repository if you find it valuable and worth maintaining.
