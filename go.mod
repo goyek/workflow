@@ -3,7 +3,7 @@ module github.com/goyek/workflow
 go 1.22
 
 require (
-	github.com/goyek/goyek/v2 v2.1.0
+	github.com/goyek/goyek/v2 v2.2.0
 	github.com/goyek/x v0.1.7
 )
 
